@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vipchangephone_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:layout_marginTop="@dimen/dm060"
+                android:background="@color/white"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm020"
+                android:text="13910012345"
+                android:textColor="@color/title_color_one"
+                android:textSize="@dimen/dm027" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:background="@color/background" />
+
+            <EditText
+                android:id="@+id/vipchangephone_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="新手机号"
+                android:inputType="phone"
+                android:paddingLeft="@dimen/dm020"
+                android:textColor="#333333"
+                android:textColorHint="#d4d4d4"
+                android:textSize="@dimen/dm027" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:background="@color/background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/vipchangephone_code_et"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="验证码"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="@dimen/dm020"
+                    android:textColor="#333333"
+                    android:textColorHint="#d4d4d4"
+                    android:textSize="@dimen/dm027" />
+
+                <TextView
+                    android:id="@+id/vipchangephone_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_green"
+                    android:gravity="center"
+                    android:padding="@dimen/dm018"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm024" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/vipchangephone_save_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm090"
+                android:background="@drawable/circular_green_login_bg"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm030" />
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

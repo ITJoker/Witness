@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vipreport_bj"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <ImageView
+        android:id="@+id/vipreport_yizhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm173"
+        android:layout_marginTop="@dimen/dm252"
+        android:src="@drawable/vipreport_yizhuce" />
+
+    <TextView
+        android:id="@+id/vipreport_yizhuce11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vipreport_yizhuce"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_toRightOf="@id/vipreport_yizhuce"
+        android:text="已注册"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:id="@+id/vipreport_yizhuce22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vipreport_yizhuce11"
+        android:layout_toRightOf="@id/vipreport_yizhuce11"
+        android:text="0"
+        android:textColor="#ff1c1c"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/vipreport_yizhuce22"
+        android:layout_toRightOf="@id/vipreport_yizhuce22"
+        android:text="天"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <ImageView
+        android:id="@+id/vipreport_kaquan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm222"
+        android:layout_marginTop="@dimen/dm370"
+        android:src="@drawable/vipreport_kaquan" />
+
+    <TextView
+        android:id="@+id/vipreport_kaquan11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm065"
+        android:layout_marginTop="@dimen/dm360"
+        android:text="已领取卡券"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:id="@+id/vipreport_kaquan22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/vipreport_kaquan11"
+        android:layout_marginTop="@dimen/dm390"
+        android:text="0"
+        android:textColor="#ff1c1c"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm390"
+        android:layout_toRightOf="@id/vipreport_kaquan22"
+        android:text="个"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm481"
+        android:layout_marginLeft="@dimen/dm215"
+        android:src="@drawable/vipreport_renwuwangcheng" />
+
+    <TextView
+        android:id="@+id/vipreport_renwuwangcheng11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm490"
+        android:layout_marginLeft="@dimen/dm060"
+        android:text="任务已完成"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:id="@+id/vipreport_renwuwancheng_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm455"
+        android:layout_marginLeft="@dimen/dm150"
+        android:text="0"
+        android:textColor="#ff1c1c"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm455"
+        android:layout_marginLeft="@dimen/dm173"
+        android:text="个"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dm257"
+        android:layout_marginLeft="@dimen/dm290"
+        android:src="@drawable/vipreport_jiangjin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/dm210"
+        android:layout_marginLeft="@dimen/dm270"
+        android:text="已领取奖金"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:id="@+id/vipreport_lingqujiangjin_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/dm180"
+        android:layout_marginLeft="@dimen/dm270"
+        android:text="0.00"
+        android:textColor="#ff1c1c"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/dm180"
+        android:layout_marginLeft="@dimen/dm330"
+        android:text="元"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dm478"
+        android:layout_marginRight="@dimen/dm215"
+        android:src="@drawable/vipreport_jifen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dm480"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm060"
+        android:text="已领取积分"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:id="@+id/vipreport_lingqujifen_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dm450"
+        android:layout_marginRight="@dimen/dm170"
+        android:text="0"
+        android:textColor="#ff1c1c"
+        android:textSize="@dimen/dm028" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dm450"
+        android:layout_marginRight="@dimen/dm130"
+        android:text="天"
+        android:textColor="#744711"
+        android:textSize="@dimen/dm028" />
+
+
+</RelativeLayout>

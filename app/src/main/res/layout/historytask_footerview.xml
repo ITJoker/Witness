@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/completed_upload_mode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_adv_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm030"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm020"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广告拍摄情况：" />
+
+        <TextView
+            android:id="@+id/adv_camera_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="良好" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_select_radio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm020"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/questions_select_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="timu：" />
+
+        <TextView
+            android:id="@+id/history_task_selet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="良好" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_select_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm100"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm020"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/questions_select_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择漏刊范围：" />
+
+        <TextView
+            android:id="@+id/history_task_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_fill_the_blank_spaces"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dm030"
+        android:layout_marginLeft="@dimen/dm030"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm020"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fill_the_blank_spaces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="针对这次拍摄有什么建议反馈：" />
+
+        <TextView
+            android:id="@+id/history_task_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检测首选检测中心，首批通过CMA认证及北京市建委备案单位，面向社会提供公平公正检测服务" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm002"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:background="@color/vip" />
+</LinearLayout>

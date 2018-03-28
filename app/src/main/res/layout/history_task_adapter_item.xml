@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/request_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm020"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/marke_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm030"
+            android:background="@drawable/step_one" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pictureDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm010"
+                android:layout_marginRight="@dimen/dm010"
+                android:layout_marginTop="@dimen/dm005"
+                android:text="拍摄取证"
+                android:textSize="@dimen/dm026" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm056"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pictureRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="拍摄要求："
+                    android:textColor="#66666666"
+                    android:textSize="@dimen/dm026" />
+
+                <TextView
+                    android:id="@+id/history_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dm010"
+                    android:text="朝阳小区"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/dm026" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/history_task_exampleImageListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/translete"
+        android:dividerHeight="0dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/history_task_cameraImageListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:divider="@color/translete"
+        android:dividerHeight="0dp" />
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="service_host_address">http://www.adexmall.net/</string>
+
+    <string name="defaulpage">app/defaulpage</string>
+
+    <!--2.1.1 登录-->
+    <string name="login">User/login/</string>
+    <!--2.1.2 发送验证码-->
+    <string name="getCode">User/getCode/</string>
+    <!--2.1.3 注册-->
+    <string name="reg">User/reg/</string>
+    <!--2.1.4 找回密码-->
+    <string name="getPassword">User/getPassword/</string>
+    <!--2.1.5 注册时手机号失去焦点验证-->
+    <string name="PhoneVerify">User/PhoneVerify/</string>
+    <!--2.1.6 用户版本更新-->
+    <string name="updateVersion">User/updateVersion/</string>
+
+    <!--2.2.1 任务列表-->
+    <string name="taskList">Task/taskList/</string>
+    <!--2.2.2 任务详情-->
+    <string name="taskDetails">Task/taskDetails/</string>
+    <!--2.2.3 抢任务-->
+    <string name="lootTask">Task/lootTask/</string>
+    <!--2.2.4 培训内容H5页面-->
+    <string name="trainContent">Task/trainContent/</string>
+    <!--2.2.5 执行中-任务预览-->
+    <string name="taskPreview">Task/taskPreview/</string>
+    <!--2.2.6 任务-地图-->
+    <string name="taskMap">Task/taskMap/</string>
+    <!--2.2.7 单个任务定位-->
+    <string name="singleTaskPosition">Task/singleTaskPosition/</string>
+    <!--2.2.8任务搜索-->
+    <string name="taskSearch">Task/taskSearch/</string>
+    <!--2.2.10地图点击后的任务-->
+    <string name="mapCotent">Task/mapCotent/</string>
+    <!--2.2.9 媒体类型√√-->
+    <string name="mediatype">Task/mediatype/</string>
+    <!--2.2.11 城市接口√-->
+    <string name="city">Task/city/</string>
+    <!--2.2.12 公司√-->
+    <string name="company">Task/company/</string>
+    <!--任务指南-->
+    <string name="taskTrain">Task/taskTrain</string>
+    <!--任务指南完成-->
+    <string name="istrain">Task/istrain</string>
+
+    <!--2.3.1 任务数量-->
+    <!--<string name="taskCount">Task/taskCount/</string>-->
+    <string name="taskCount">NewTask/taskCount/</string>
+    <!--2.3.2 我的任务列表-->
+    <!--<string name="myTaskList">Task/myTaskLists/</string>-->
+    <string name="myTaskList">NewTask/myTaskLists/</string>
+    <!--2.3.3 我的任务详情-->
+    <!--未执行任务详情-->
+    <string name="myTaskDetails">Task/myTaskDetails/</string>
+    <string name="myBatchTaskUpload">Task/batch/</string>
+    <!--2.3.4 提交任务-->
+    <string name="submitTask">Task/submitTask/</string>
+    <!--2.3.5 已过期/已放弃列表-->
+    <string name="disableTask">Task/disableTask/</string>
+    <!--2.3.6 图片上传-->
+    <string name="pictureUpload">Task/pictureUpload/</string>
+    <!--2.3.7 视频上传-->
+    <string name="videoUpload">Task/videoUpload/</string>
+    <!--排期任务已上任务列表-->
+    <string name="uploadList">Task/uploadList/</string>
+    <!--固定排期任务已上任务列表-->
+    <string name="settledTaskUploadList">Task/FixedtaskList/</string>
+    <string name="saveTaskModelThree">Task/saveTaskModel/</string>
+
+    <!--2.3.8 已上传详情-->
+    <string name="UploadedDetails">Task/UploadedDetails/</string>
+    <string name="ScheduleUploadedDetails">NewTask/ScheduleUploadedDetails/</string>
+    <!--已上传详情，临时创建-->
+    <string name="newScheduleUploadedDetails">NewTask/newScheduleUploadedDetails/</string>
+    <!--<string name="newScheduleUploadedDetails">NewTask/ScheduleUploadedDetails/</string>-->
+    <!--固定任务已上传详情-->
+    <string name="fixedTaskUploadedDetails">Task/fixedTaskUploadedDetails/</string>
+    <!--2.3.9 驳回原因-->
+    <string name="rejectCause">Task/rejectCause/</string>
+    <!--2.3.10 放弃任务-->
+    <string name="giveUpTask">Task/giveUpTask/</string>
+    <string name="problem"> Task/problem/</string>
+    <string name="saveTaskIssueState"> Task/saveTaskIssueState/</string>
+    <string name="saveTask">Task/saveTaskEnd</string>
+    <string name="uploadTask">Task/uploadTask/</string>
+    <string name="saveTaskfilepath">Task/saveTask/</string>
+    <!--<string name="taskListSearch">Task/taskListSearch/</string>-->
+    <string name="taskListSearch">NewTask/taskListSearch/</string>
+    <string name="taskIsread">Task/taskIsread/</string>
+    <!--2.3.21 断点上传-->
+    <string name="breakPointUpload">Task/breakpointUpload/</string>
+    <!--2.3.22 获取断点上传文件路径-->
+    <string name="fakeVideoUpload">Task/fakevideoUpload/</string>
+    <!--2.3.23 固定任务-->
+    <string name="settledTask">task/SettledTask/</string>
+    <!--2.3.24 固定任务详情页-->
+    <string name="fixedTaskDetails">task/fixedtaskDetails/</string>
+    <!--2.3.25 固定任务照片上传接口-->
+    <string name="pictureFixed">task/pictureFixed/</string>
+    <!--2.3.26 固定任务视频上传接口-->
+    <string name="videoFixed">task/videoFixed/</string>
+    <!--2.3.27 固定任务参数上传接口-->
+    <string name="saveFixedTask">task/saveFixedTask/</string>
+    <!--2.3.28 固定任务参数上传接口-->
+    <string name="checkOverdue">NewTask/CheckOverdue/</string>
+
+    <!--2.4.1 个人信息-->
+    <!--修改个人信息接口：Personal/personalCenter 新增两个字段：Province_name（省） City_name（市）-->
+    <string name="personalCenter">Personal/personalCenter/</string>
+    <string name="personalPersonage">Personal/personage/</string>
+    <!--c（登录标识） sex（0.未设置 1.男  2.女）-->
+    <string name="personalEditSex">Personal/editsex/</string>
+
+    <!--意见反馈-->
+    <string name="feedback">Personal/feedback/</string>
+    <!--2.4.2 修改昵称-->
+    <string name="editNickName">Personal/editNickName/</string>
+    <!--2.4.3 修改密码-->
+    <string name="editPassword">Personal/editPassword/</string>
+    <!--2.4.4 更换用户手机号-->
+    <string name="editTel">Personal/editTel/</string>
+    <!--2.4.5 常用地址设置-->
+    <string name="oftenAddress">Personal/oftenAddress/</string>
+    <!--2.4.6 钱包-->
+    <string name="myWallet">Personal/myWallet/</string>
+    <!--2.4.7 金额-->
+    <string name="myPrice">Personal/myPrice/</string>
+    <!--2.4.8 提现中-->
+    <string name="withdrawOf">Personal/withdrawOf/</string>
+    <!--2.4.9 历史记录-->
+    <string name="history">Personal/history/</string>
+    <!--2.4.10 奖励卡卷列表-->
+    <string name="CardList">Personal/CardList/</string>
+    <!--2.4.11 奖励卡券内容-->
+    <string name="CardContent">Personal/CardContent/</string>
+    <!--2.4.12 奖励卡卷对接 暂定-->
+    <!--2.4.13 设置支付宝账号-->
+    <string name="setAlipayNumber">Personal/setAlipayNumber/</string>
+    <!--2.4.14 账户实名认证-->
+    <string name="realNameApprove">Personal/realNameApprove/</string>
+    <!--2.4.15 任务快到期提醒开关-->
+    <string name="taskExpireOnOff">Personal/taskExpireOnOff/</string>
+    <!--2.4.16 夜间免打扰开关-->
+    <string name="nightNotDisturb">Personal/nightNotDisturb/</string>
+    <!--2.4.17关于-->
+    <string name="about">Personal/newAbout/</string>
+    <!--2.4.18 帮助文档分类-->
+    <string name="helptype">Personal/helptype/</string>
+    <!--2.4.18 帮助文档-->
+    <string name="helpDocument">Personal/helpDocument/</string>
+    <!--2.4.19 成绩单-->
+    <string name="report">Personal/report/</string>
+    <!--2.4.19 成绩单分享-->
+    <string name="reportShare">Personal/reportShare/</string>
+    <!--2.4.20 专业人员认证-->
+    <string name="professionalApprove">Personal/professionalApprove/</string>
+    <!--2.4.21 专业人员是否认证-->
+    <string name="is_approve">Personal/is_approve/</string>
+    <!--2.4.21 消息中心-->
+    <string name="messageCenter">Personal/messageCenter/</string>
+    <!--2.4.21 删除消息中心-->
+    <string name="delMessage">Personal/delMessage/</string>
+    <!--2.4.23 修改头像√-->
+    <string name="editHeadPic">Personal/editHeadPic/</string>
+    <!--2.4.26 用户常用地址信息√-->
+    <string name="oftensite">Personal/oftensite/</string>
+    <!--2.4.27 未读消息个数√-->
+    <string name="messageState">Personal/messageState/</string>
+    <!--2.4.27 未读消息个数√-->
+    <string name="messageUpdate">Personal/messageUpdstate/</string>
+    <!--认证信息√-->
+    <string name="approveMsg">Personal/approveMsg</string>
+    <!--我的认证-->
+    <string name="myApproveInfo">NewPersonal/is_approve/</string>
+    <string name="clientAuthentication">NewPersonal/ClientAuthentication/</string>
+    <!--提现地址-->
+    <string name="withDrawal">Personal/withDrawal/</string>
+    <string name="giveuptask">Task/giveUpTask/</string>
+    <string name="rejecttask">Task/rejectCause/</string>
+    <!--管理员端认证：参数：c（登录标识） ApproveCode（认证码）-->
+    <string name="ApproveOne">NewTask/ApproveOne/</string>
+    <!--管理员端列表：参数：c（登录标识）-->
+    <string name="ApproveOneList">NewTask/ApproveOneList/</string>
+    <!--媒体主端认证：参数：c（登录标识） ApproveCode（认证码）-->
+    <string name="ApproveTwo">NewTask/ApproveTwo/</string>
+    <!--媒体主端列表：参数：c（登录标识）-->
+    <string name="ApproveTwoList">NewTask/ApproveTwoList/</string>
+    <!--返回城市接口：NewPersonal/ReturnCity-->
+    <string name="ReturnCity">NewPersonal/ReturnCity/</string>
+    <!--提交城市接口：NewPersonal/SubCity  参数：c（登录标识) ，ProvinceId（省ID），CityId（市ID）-->
+    <string name="SubCity">NewPersonal/SubCity/</string>
+
+    <!-- Whether or not to stop preview between taking shots -->
+    <bool name="config_stopPreviewBetweenShots">false</bool>
+
+    <!-- Whether or not to enable camera-mode=1 for ZSL on Qualcomm devices -->
+    <bool name="config_qualcommZslCameraMode">true</bool>
+
+    <!-- Whether or not to use preview data to take snapshots while in the video mode.
+         This enables snapshot during videos on older devices. -->
+    <bool name="config_usePreviewForVideoSnapshot">false</bool>
+
+    <!-- The largest possible GL texture size -->
+    <integer name="config_maxTextureSize">4096</integer>
+
+    <!-- The ideal panorama picture resolution to use. AOSP enforces a 640x480 resolution
+         whenever possible, but we can get better shots with higher resolution just as well. -->
+    <integer name="config_panoramaDefaultWidth">1280</integer>
+    <integer name="config_panoramaDefaultHeight">720</integer>
+
+    <!-- Whether or not to enable Samsung HDR capabilities -->
+    <bool name="config_useSamsungHDR">false</bool>
+
+    <!-- Whether or not to enable Samsung ZSL capabilities -->
+    <bool name="config_useSamsungZSL">false</bool>
+</resources>

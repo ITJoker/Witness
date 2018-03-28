@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/item_grida_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm020">
+
+        <ImageView
+            android:id="@+id/item_grida_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm360"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/item_grida_image_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm360"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/item_grida_left_image"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="@dimen/dm360"
+                android:layout_weight="66"
+                android:scaleType="center"
+                android:src="@drawable/image_shooting" />
+
+            <View
+                android:layout_width="@dimen/dm000"
+                android:layout_height="@dimen/dm225"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/alpha_gray" />
+
+            <ImageView
+                android:id="@+id/item_grida_right_image"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="@dimen/dm360"
+                android:layout_weight="66"
+                android:scaleType="center"
+                android:src="@drawable/image_transcribe" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_grid_video_click"
+            android:layout_width="@dimen/dm180"
+            android:layout_height="@dimen/dm180"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/video_call_selector"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/delete_imageview"
+        android:layout_width="@dimen/dm050"
+        android:layout_height="@dimen/dm050"
+        android:layout_alignEnd="@+id/item_grida_fl"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/item_grida_fl"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/dm030"
+        android:src="@drawable/task_image_delete"
+        android:visibility="gone" />
+</RelativeLayout>

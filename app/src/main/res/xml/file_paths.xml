@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--物理路径相当于Context.getFilesDir() + /path/-->
+        <files-path name="name" path="path" />
+
+        <!--物理路径相当于Context.getCacheDir() + /path/-->
+        <cache-path name="name" path="path" />
+
+        <!--物理路径相当于Environment.getExternalStorageDirectory() + /path/-->
+        <external-path name="name" path="path" />
+
+        <!--物理路径相当于Context.getExternalFilesDir(String) + /path/-->
+        <external-files-path name="name" path="path" />
+
+        <!--物理路径相当于Context.getExternalCacheDir() + /path/-->
+        <external-cache-path name="name" path="path" />
+
+        <!--name：一个引用字符串-->
+        <!--path：文件夹“相对路径”，完整路径取决于当前的标签类型-->
+        <external-path
+            name="settledTaskPhotosSaveUrl"
+            path="system/files/witness/" />
+
+        <external-path
+            name="settledTaskPhotosCompressSaveUrl"
+            path="system/files/witnessCompress/" />
+
+        <external-path
+            name="videosSaveUrl"
+            path="ObtainEvidenceVideo/" />
+
+        <external-path
+            name="photosSaveUrl"
+            path="ObtainEvidenceImage/" />
+
+        <external-path
+            name="photosCompressSaveUrl"
+            path="ObtainEvidenceCompress/" />
+
+        <!-- root-path 手机存储根目录 -->
+        <root-path
+            name="root_path"
+            path="." />
+    </paths>
+</resources>

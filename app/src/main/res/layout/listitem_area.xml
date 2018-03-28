@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/layout_notfound_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:layout_marginTop="@dimen/dm020">
+
+    <TextView
+        android:id="@+id/test_area_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:layout_marginTop="@dimen/dm020"
+        android:text="看看是什么问题"
+        android:textSize="@dimen/dm026" />
+
+    <com.risenb.witness.views.newViews.AnFQNumEditText
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dm020"
+        android:id="@+id/list_item_area_input"
+        android:layout_marginLeft="@dimen/dm025"
+        android:layout_marginRight="@dimen/dm025"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>

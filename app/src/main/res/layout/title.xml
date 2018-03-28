@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm072"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/title_color_one"
+        android:textSize="@dimen/dm030" />
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030">
+
+        <ImageView
+            android:layout_width="@dimen/dm042"
+            android:layout_height="@dimen/dm042"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dm010"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="#4c4c4c"
+            android:textSize="@dimen/dm024"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/dm030"
+            android:layout_height="@dimen/dm030"
+            android:src="@drawable/left"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm030"
+            android:paddingRight="@dimen/dm030"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="@color/title_color_one"
+                android:textSize="@dimen/dm024"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="@dimen/dm030"
+                android:layout_height="@dimen/dm030"
+                android:layout_marginLeft="@dimen/dm010"
+                android:src="@drawable/right"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_task_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dm030"
+            android:paddingRight="@dimen/dm030"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_task_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="任务指南"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm024"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_task_guide"
+                android:layout_width="@dimen/dm042"
+                android:layout_height="@dimen/dm042"
+                android:layout_marginLeft="@dimen/dm010"
+                android:src="@drawable/ic_shortcut_explore"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background" />
+</RelativeLayout>

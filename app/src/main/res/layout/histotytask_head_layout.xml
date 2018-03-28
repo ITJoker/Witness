@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_taskdetails_image_adress"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dm020"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dm060"
+                android:layout_height="@dimen/dm060"
+                android:src="@drawable/icon_taskdetails_adress" />
+
+            <TextView
+                android:id="@+id/historytask_adrress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="3"
+                android:text="地址"
+                android:textColor="@color/title_color_one"
+                android:textSize="@dimen/dm024"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/task_mark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注："
+            android:layout_margin="@dimen/dm020"
+            android:textColor="@color/review_drawer_button_bg"
+            android:textSize="@dimen/dm024" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/uploaded_task_price_and_countdown_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dm020"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_item_money" />
+
+            <TextView
+                android:id="@+id/historytask_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm015"
+                android:text="50.00+200积分"
+                android:textColor="#e11818"
+                android:textSize="@dimen/dm028" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/countdownTimerLayout"
+            android:layout_width="@dimen/dm250"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/historytask_countdown_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="失效倒计时"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+
+                <com.risenb.witness.views.citypicker.CountDownTimerView
+                    android:id="@+id/historytask_countdown"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/historytask_progressbar"
+                style="@style/StyleProgressBarMini"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm010"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dm006"
+                android:background="@drawable/shape_progressbar_bg"
+                android:max="100"
+                android:progress="20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:background="@color/background" />
+
+    <TextView
+        android:id="@+id/historytask_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dm020"
+        android:text="上刊状态"
+        android:textColor="@color/title_color_one"
+        android:textSize="@dimen/dm027" />
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:background="@color/background" />-->
+
+    <TextView
+        android:id="@+id/historytask_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dm020"
+        android:text="上刊备注"
+        android:textColor="@color/title_color_one"
+        android:textSize="@dimen/dm027" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm020"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:id="@+id/reject_reason_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm270"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dm020"
+            android:text="驳回原因："
+            android:textColor="@color/title_color_one"
+            android:textSize="@dimen/dm027"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/history_task_reject_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm020"
+            android:layout_marginLeft="@dimen/dm020"
+            android:layout_marginRight="@dimen/dm020"
+            android:textColor="@color/title_color_one"
+            android:textSize="@dimen/dm027"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/reject_reason_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm020"
+        android:background="@color/background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm040"
+        android:background="@color/white" />
+</LinearLayout>

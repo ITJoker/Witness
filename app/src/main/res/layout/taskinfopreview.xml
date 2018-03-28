@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/taskinfopreview_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm026"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm026" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:src="@drawable/home_item_money" />
+
+                        <TextView
+                            android:id="@+id/taskinfopreview_price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm015"
+                            android:text="￥0"
+                            android:textColor="#e11818"
+                            android:textSize="@dimen/dm028" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dm250"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="失效倒计时"
+                                android:textColor="#787878"
+                                android:textSize="@dimen/dm022" />
+
+                            <com.risenb.witness.views.citypicker.CountDownTimerView
+                                android:id="@+id/taskinfopreview_time_cdtv"
+                                android:layout_width="@dimen/dm000"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/taskinfopreview_time_pb"
+                            style="@style/StyleProgressBarMini"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dm010"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/dm020"
+                            android:layout_marginTop="@dimen/dm007"
+                            android:background="@drawable/shape_progressbar_bg" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/taskinfopreview_qz_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm015"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/taskifn_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm050"
+                android:background="@color/background" />
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+
+</LinearLayout>

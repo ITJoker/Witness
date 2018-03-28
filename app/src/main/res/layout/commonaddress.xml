@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vip"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vipinfo_commonaddress_home_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm088"
+                android:layout_marginLeft="@dimen/dm016"
+                android:layout_marginRight="@dimen/dm016"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_dizhi" />
+
+                <TextView
+                    android:id="@+id/vipinfo_commonaddress_home_tv"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="地址未设置"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm026" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm024"
+                    android:layout_height="@dimen/dm024"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_marginLeft="@dimen/dm046"
+                android:layout_marginRight="@dimen/dm046"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/vipinfo_commonaddress_company_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm088"
+                android:layout_marginLeft="@dimen/dm016"
+                android:layout_marginRight="@dimen/dm016"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_gongsidizhi" />
+
+                <TextView
+                    android:id="@+id/vipinfo_commonaddress_comany_tv"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="地址未设置"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm026" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm024"
+                    android:layout_height="@dimen/dm024"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+
+</LinearLayout>

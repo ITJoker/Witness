@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/homescreen_view"
+        android:layout_width="@dimen/dm000"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent_one" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="@dimen/dm000"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_bg"
+                android:orientation="vertical">
+
+                <include layout="@layout/homescreen_title_bar" />
+
+                <LinearLayout
+                    android:id="@+id/homescreen_city_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dm020">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:text="城市"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:id="@+id/homescreen__city_tv"
+                        android:layout_width="@dimen/dm000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/main_green"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:id="@+id/homescreen_city_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:src="@drawable/bangzhuwendangxia" />
+                </LinearLayout>
+
+                <com.risenb.witness.views.newViews.MyGridView
+                    android:id="@+id/homescreen__city_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="3"
+                    android:padding="@dimen/dm020"
+                    android:verticalSpacing="@dimen/dm020" />
+
+                <LinearLayout
+                    android:id="@+id/homescreen_media_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm015"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dm020">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:text="媒体类型"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:id="@+id/homescreen__media_tv"
+                        android:layout_width="@dimen/dm000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/main_green"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:id="@+id/homescreen_media_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:src="@drawable/bangzhuwendangxia" />
+                </LinearLayout>
+
+                <com.risenb.witness.views.newViews.MyGridView
+                    android:id="@+id/homescreen_media_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="3"
+                    android:padding="@dimen/dm020"
+                    android:verticalSpacing="@dimen/dm020" />
+
+                <LinearLayout
+                    android:id="@+id/homescreen_brand_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm015"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dm020">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:text="品牌"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:id="@+id/homescreen_brand_tv"
+                        android:layout_width="@dimen/dm000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/main_green"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:id="@+id/homescreen_brand_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:src="@drawable/bangzhuwendangxia" />
+                </LinearLayout>
+
+                <com.risenb.witness.views.newViews.MyGridView
+                    android:id="@+id/homescreen_brand_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:numColumns="3"
+                    android:padding="@dimen/dm020"
+                    android:verticalSpacing="@dimen/dm020" />
+
+                <EditText
+                    android:id="@+id/homeScreen_search_ev"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm066"
+                    android:layout_marginBottom="@dimen/dm015"
+                    android:layout_marginTop="@dimen/dm015"
+                    android:background="@color/white"
+                    android:drawablePadding="@dimen/dm006"
+                    android:gravity="center_vertical"
+                    android:hint="详细地址（请先选择城市）"
+                    android:paddingLeft="@dimen/dm020"
+                    android:paddingRight="@dimen/dm020"
+                    android:singleLine="true"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="@dimen/dm024"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/search_time_start_to_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dm020"
+                        android:paddingLeft="@dimen/dm030"
+                        android:paddingTop="@dimen/dm020"
+                        android:text="上传时间区间"
+                        android:textColor="@color/clock_red" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/search_start_time"
+                            android:layout_width="@dimen/dm210"
+                            android:layout_height="@dimen/dm072"
+                            android:background="@drawable/circular_time_background"
+                            android:gravity="center"
+                            android:hint="起始时间"
+                            android:onClick="onYearMonthDayStartPicker"
+                            android:textColor="@color/gray"
+                            android:textColorHint="@color/gray" />
+
+                        <Button
+                            android:id="@+id/search_end_time"
+                            android:layout_width="@dimen/dm210"
+                            android:layout_height="@dimen/dm072"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:background="@drawable/circular_time_background"
+                            android:gravity="center"
+                            android:hint="结束时间"
+                            android:onClick="onYearMonthDayEndPicker"
+                            android:textColor="@color/gray"
+                            android:textColorHint="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm030"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/homescreen_reset_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/common_bg"
+                        android:gravity="center"
+                        android:text="重置"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm030" />
+
+                    <TextView
+                        android:id="@+id/homescreen_ok_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/main_green"
+                        android:gravity="center"
+                        android:text="完成"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm030" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.arlib.floatingsearchview.FloatingSearchView
+                android:id="@+id/floating_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm100"
+                app:floatingSearch_close_search_on_keyboard_dismiss="true"
+                app:floatingSearch_dimBackground="false"
+                app:floatingSearch_leftActionMode="showHamburger"
+                app:floatingSearch_menu="@menu/menu_main"
+                app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+                app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+                app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"
+                app:floatingSearch_searchHint="搜索..."
+                app:floatingSearch_showSearchKey="false"
+                app:floatingSearch_suggestionsListAnimDuration="250" />
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

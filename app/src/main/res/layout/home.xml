@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dm072">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <com.risenb.witness.views.newViews.ZoomControlView
+            android:id="@+id/ZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="5dip" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dm500"
+            android:layout_height="@dimen/dm060"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/message_tv0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabClick"
+                android:text="随手拍"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/dm027" />
+
+            <TextView
+                android:id="@+id/message_tv1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabClick"
+                android:text="距离最近"
+                android:textColor="@color/main_green"
+                android:textSize="@dimen/dm027" />
+
+            <TextView
+                android:id="@+id/message_tv2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onTabClick"
+                android:text="金额最高"
+                android:textColor="@color/main_gray"
+                android:textSize="@dimen/dm027" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_title_bar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_marginTop="@dimen/dm072"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dm500"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm040"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/message_tab0"
+                android:layout_width="@dimen/dm250"
+                android:layout_height="@dimen/dm003"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/message_tab1"
+                android:layout_width="@dimen/dm250"
+                android:layout_height="@dimen/dm003"
+                android:layout_weight="1"
+                android:background="@color/main_green"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/message_tab2"
+                android:layout_width="@dimen/dm250"
+                android:layout_height="@dimen/dm003"
+                android:layout_weight="1"
+                android:background="@color/main_green"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_title_bar_ll"
+        android:background="@color/background" />
+</RelativeLayout>

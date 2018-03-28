@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_pop_ico_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_pop_ico_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm088"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#333"
+            android:textSize="@dimen/dm026" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm002"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/tv_pop_ico_photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm088"
+            android:gravity="center"
+            android:text="从相册选择"
+            android:textColor="#333"
+            android:textSize="@dimen/dm026" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm010" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#cccccc" />
+
+            <View
+                android:layout_width="@dimen/dm450"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="#1476b8" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_pop_ico_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm088"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#333"
+            android:textSize="@dimen/dm026" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_taskdetails_image_adress"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dm020"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dm060"
+                            android:layout_height="@dimen/dm060"
+                            android:src="@drawable/icon_taskdetails_adress" />
+
+                        <TextView
+                            android:id="@+id/uncertain_evi_adrress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:maxLines="3"
+                            android:textColor="@color/title_color_one"
+                            android:textSize="@dimen/dm024"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_quzheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dm020"
+                        android:paddingLeft="@dimen/dm010"
+                        android:text="备注："
+                        android:textColor="@color/review_drawer_button_bg"
+                        android:textSize="@dimen/dm024" />
+
+                    <LinearLayout
+                        android:id="@+id/price_and_countdown_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dm020"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/uncertain_price_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/home_item_money"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/uncertain_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/clock_red"
+                                android:textSize="@dimen/dm024" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/uncertain_countdown_layout"
+                            android:layout_width="@dimen/dm250"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="失效倒计时"
+                                    android:textColor="#787878"
+                                    android:textSize="@dimen/dm021" />
+
+                                <com.risenb.witness.views.citypicker.CountDownTimerView
+                                    android:id="@+id/uncertain_countdown"
+                                    android:layout_width="@dimen/dm000"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm006"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <ProgressBar
+                                android:id="@+id/taskobtain_progressbar"
+                                style="@style/StyleProgressBarMini"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dm010"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dm030"
+                                android:layout_marginTop="@dimen/dm007"
+                                android:background="@drawable/shape_progressbar_bg"
+                                android:max="100"
+                                android:progress="20" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dm020"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/uncertain_evi_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/step_one"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/execute_request_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/uncertain_evi_image"
+                            android:gravity="bottom"
+                            android:text="具体拍摄要求请参考任务指南"
+                            android:textColor="@color/clock_red"
+                            android:textSize="@dimen/dm024"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/uncertain_evi_requst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/uncertain_evi_image"
+                            android:layout_marginLeft="@dimen/dm010"
+                            android:layout_toRightOf="@+id/execute_request_tv" />
+
+                        <Button
+                            android:id="@+id/uncertain_evi_camera"
+                            android:layout_width="@dimen/dm080"
+                            android:layout_height="@dimen/dm080"
+                            android:layout_alignBottom="@+id/uncertain_evi_image"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:background="@drawable/task_takecamera"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/uncertain_example_image_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm012">
+
+                            <ImageView
+                                android:id="@+id/uncertain_example_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="210dp"
+                                android:scaleType="fitXY"
+                                android:src="@color/bantm" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/uncertain_example_image_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm020"
+                            android:layout_marginTop="@dimen/dm025"
+                            android:background="@drawable/task_title_image"
+                            android:gravity="center"
+                            android:text="示例图"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <com.risenb.witness.views.newViews.MyGridView
+                            android:id="@+id/uncertain_add_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dm010"
+                            android:layout_marginLeft="@dimen/dm018"
+                            android:layout_marginRight="@dimen/dm018"
+                            android:horizontalSpacing="2dp"
+                            android:listSelector="@color/transparent"
+                            android:numColumns="1"
+                            android:scrollbars="none"
+                            android:verticalSpacing="2dp" />
+
+                        <EditText
+                            android:id="@+id/settled_task_remark_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dm240"
+                            android:layout_marginBottom="@dimen/dm030"
+                            android:layout_marginLeft="@dimen/dm018"
+                            android:layout_marginRight="@dimen/dm018"
+                            android:background="@drawable/circular_gray"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:maxLines="5"
+                            android:padding="@dimen/dm010"
+                            android:paddingLeft="@dimen/dm003"
+                            android:paddingTop="@dimen/dm003"
+                            android:textColor="@color/title_color_one"
+                            android:textColorHint="#d4d4d4"
+                            android:textSize="@dimen/dm021"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/uncertain_evi_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm060"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dm030"
+                    android:layout_marginLeft="@dimen/dm090"
+                    android:layout_marginRight="@dimen/dm090"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:background="@drawable/circular_green_login_bg"
+                    android:gravity="center"
+                    android:text="下一步"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm030" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/operation_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/operation_guide"
+        android:visibility="gone" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bangzhuwendangxia" android:state_expanded="false" />
+    这里la是下拉图标
+
+    <item android:drawable="@drawable/bangzhuwendangshang" android:state_expanded="true" />
+    这里shou是收回图标
+</selector>

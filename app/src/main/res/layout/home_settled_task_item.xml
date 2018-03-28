@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/settled_task_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dm018"
+        android:layout_marginRight="@dimen/dm018"
+        android:layout_marginTop="@dimen/dm018"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/settled_task_image_iv"
+                android:layout_width="@dimen/dm150"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dm018"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dm000"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dm018"
+                android:layout_marginTop="@dimen/dm018"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/settled_task_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="猴哥猴哥，你真了不得"
+                    android:textColor="@color/title_color_one"
+                    android:textSize="@dimen/dm027" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dm018"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/settled_task_province_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="花果山省"
+                        android:textColor="@color/title_color_two"
+                        android:textSize="@dimen/dm024" />
+
+                    <TextView
+                        android:id="@+id/settled_task_city_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="水帘洞市"
+                        android:textColor="@color/title_color_two"
+                        android:textSize="@dimen/dm024" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm036"
+                    android:layout_marginBottom="@dimen/dm018"
+                    android:layout_marginTop="@dimen/dm018"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dm006"
+                            android:layout_toLeftOf="@+id/settled_task_price_tv"
+                            android:background="@drawable/home_item_money"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/settled_task_price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="￥1986"
+                            android:textColor="@color/clock_red"
+                            android:textSize="@dimen/dm027" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/settled_task_number_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="可执行次数：1000"
+                        android:textColor="@color/title_color_two"
+                        android:textSize="@dimen/dm021" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dm018"
+            android:layout_marginLeft="@dimen/dm018"
+            android:layout_marginRight="@dimen/dm018"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dm000"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="失效倒计时："
+                    android:textColor="@color/title_color_two"
+                    android:textSize="@dimen/dm022" />
+
+                <com.risenb.witness.views.citypicker.CountDownTimerView
+                    android:id="@+id/settled_task_count_down_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/settled_task_time_pb"
+                style="@style/StyleProgressBarMini"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dm012"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:background="@drawable/shape_progressbar_bg"
+                android:max="100"
+                android:progress="36"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

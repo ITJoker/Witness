@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="@dimen/dm020"
+        android:textColor="@color/main_green"
+        android:textSize="@dimen/dm030" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm080"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dm020"
+        android:text="北京市"
+        android:textColor="@color/title_color_one"
+        android:textSize="@dimen/dm027" />
+</LinearLayout>

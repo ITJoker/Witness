@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_overdue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm015"
+        android:background="@color/main"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_overdue_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/overduetaskinfo_image"
+                    android:layout_width="@dimen/dm144"
+                    android:layout_height="@dimen/dm121"
+                    android:layout_margin="@dimen/dm020"
+                    android:src="@color/bantm" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dm030"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/overduetaskinfo_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm021"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/overduetaskinfo_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm010"
+                        android:maxLines="3"
+                        android:textColor="@color/title_color_two"
+                        android:textSize="@dimen/dm021" />
+
+                    <TextView
+                        android:id="@+id/overduetaskinfo_task_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm010"
+                        android:maxLines="1"
+                        android:textColor="@color/title_color_two"
+                        android:textSize="@dimen/dm021" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm030"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_item_money" />
+
+                        <TextView
+                            android:id="@+id/overduetaskinfo_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm014"
+                            android:text="600积分"
+                            android:textColor="#e11818"
+                            android:textSize="@dimen/dm024" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/overdue_image"
+                android:layout_width="@dimen/dm088"
+                android:layout_height="@dimen/dm054"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

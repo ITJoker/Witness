@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.risenb.witness.views.newViews.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/text_task_lastrequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm020"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm030"
+                    android:background="@drawable/step_one" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm010"
+                        android:layout_marginTop="@dimen/dm005"
+                        android:text="拍摄取证1"
+                        android:textSize="@dimen/dm026" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm040"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010"
+                            android:text="拍摄要求:"
+                            android:textColor="#66666666"
+                            android:textSize="@dimen/dm026" />
+
+                        <TextView
+                            android:id="@+id/tasklastobtain_request"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010"
+                            android:text="朝阳小区"
+                            android:textColor="#666666"
+                            android:textSize="@dimen/dm026" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayout_lastimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_task_lastrequest">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm030"
+                    android:layout_marginRight="@dimen/dm030"
+                    android:layout_marginTop="@dimen/dm010">
+
+                    <ImageView
+                        android:id="@+id/last_image_example"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_image" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm025"
+                    android:background="@drawable/task_title_image"
+                    android:gravity="center"
+                    android:text="示例图"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm024" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayout_last_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout_lastimage"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm030"
+                    android:layout_marginRight="@dimen/dm030"
+                    android:layout_marginTop="@dimen/dm010">
+
+                    <ImageView
+                        android:id="@+id/obtainEvidence_last_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/taskobtain_lastimage_delete"
+                    android:layout_width="@dimen/dm050"
+                    android:layout_height="@dimen/dm050"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dm040"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:background="@drawable/task_image_delete"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm024" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/tasklastobtain_recordvideo"
+                android:layout_width="@dimen/dm080"
+                android:layout_height="@dimen/dm080"
+                android:layout_above="@+id/linearLayout_lastimage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/task_takerecordvideo"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm024" />
+
+            <Button
+                android:id="@+id/tasklastobtain_camera"
+                android:layout_width="@dimen/dm080"
+                android:layout_height="@dimen/dm080"
+                android:layout_above="@+id/linearLayout_lastimage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/task_takecamera"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm024" />
+
+        </RelativeLayout>
+
+        <com.risenb.witness.views.newViews.MyListView
+            android:id="@+id/list_parent_MyListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dm040"
+            android:layout_marginTop="@dimen/dm040"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/task_upload_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:background="@drawable/circular_green_login_bg"
+                android:gravity="center"
+                android:text="上传任务"
+                android:textSize="@dimen/dm030" />
+
+            <Button
+                android:id="@+id/task_save_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@drawable/circular_green_stroke_login_bg"
+                android:gravity="center"
+                android:text="保存任务"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</com.risenb.witness.views.newViews.MyScrollView>

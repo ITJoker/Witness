@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm143"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/taskobtainevi_adrress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm026"
+                    android:text="北京市东城区朝阳外大街头条甲93号"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm026" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:src="@drawable/home_item_money" />
+
+                        <TextView
+                            android:id="@+id/taskobtain_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm015"
+                            android:text="50.00"
+                            android:textColor="#e11818"
+                            android:textSize="@dimen/dm028" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dm250"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="失效倒计时"
+                                android:textColor="#787878"
+                                android:textSize="@dimen/dm022" />
+
+                            <com.risenb.witness.views.citypicker.CountDownTimerView
+                                android:id="@+id/takobtain_countdown"
+                                android:layout_width="@dimen/dm000"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/taskobtain_progressbar"
+                            style="@style/StyleProgressBarMini"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dm010"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/dm007"
+                            android:background="@drawable/shape_progressbar_bg"
+                            android:max="100"
+                            android:progress="20" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dm015"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/text_task_requestone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:background="@drawable/step_one" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dm010"
+                                android:layout_marginTop="@dimen/dm005"
+                                android:text="拍摄取证1"
+                                android:textSize="@dimen/dm026" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dm040"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text="拍摄要求:"
+                                    android:textColor="#66666666"
+                                    android:textSize="@dimen/dm026" />
+
+                                <TextView
+                                    android:id="@+id/taskobtain_xiaoquone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text="朝阳小区"
+                                    android:textColor="#666666"
+                                    android:textSize="@dimen/dm026" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayout_imagetwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_task_requestone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm010">
+
+                            <ImageView
+                                android:id="@+id/image_example_imageone"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm020"
+                            android:layout_marginTop="@dimen/dm025"
+                            android:background="@drawable/task_title_image"
+                            android:gravity="center"
+                            android:text="示例图"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayout_show_imageone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout_imagetwo"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm010">
+
+                            <ImageView
+                                android:id="@+id/obtainEvidence_show_imageone"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/taskobtain_image_deletetwo"
+                            android:layout_width="@dimen/dm050"
+                            android:layout_height="@dimen/dm050"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:layout_marginTop="@dimen/dm020"
+                            android:background="@drawable/task_image_delete"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/taskobtain_cameratwo"
+                        android:layout_width="@dimen/dm080"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_above="@+id/linearLayout_imagetwo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/task_takecamera"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024" />
+
+                    <Button
+                        android:id="@+id/taskobtain_recordvideoone"
+                        android:layout_width="@dimen/dm080"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_above="@+id/linearLayout_imagetwo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/task_takerecordvideo"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/text_task_requestthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:background="@drawable/step_two" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dm080"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dm010"
+
+                                android:text="拍摄取证2"
+                                android:textSize="@dimen/dm026" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dm040"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text="拍摄要求:"
+                                    android:textColor="#66666666"
+                                    android:textSize="@dimen/dm026" />
+
+                                <TextView
+                                    android:id="@+id/taskobtain_xiaoqutwo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text="3号楼录像5s-10min"
+                                    android:textColor="#666666"
+                                    android:textSize="@dimen/dm026" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayout_imagethree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_task_requestthree">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm010">
+
+                            <ImageView
+                                android:id="@+id/image_example_imagetwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm020"
+                            android:layout_marginTop="@dimen/dm025"
+                            android:background="@drawable/task_title_image"
+                            android:gravity="center"
+                            android:text="示例图"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayout_show_imagetwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout_imagethree"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm010">
+
+                            <ImageView
+                                android:id="@+id/obtainEvidence_show_imagetwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_image" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/taskobtain_image_deletethree"
+                            android:layout_width="@dimen/dm050"
+                            android:layout_height="@dimen/dm050"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:layout_marginTop="@dimen/dm020"
+                            android:background="@drawable/task_image_delete"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/taskobtain_camera_three"
+                        android:layout_width="@dimen/dm080"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_above="@+id/linearLayout_imagethree"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/task_takecamera"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024" />
+
+                    <Button
+                        android:id="@+id/taskobtain_recordvideothree"
+                        android:layout_width="@dimen/dm080"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_above="@+id/linearLayout_imagethree"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/task_takerecordvideo"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dm020">
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayout_imageone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_task_requesttwo">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm010">
+
+                            <ImageView
+                                android:id="@+id/image_example_imagethree"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_image" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm020"
+                            android:layout_marginTop="@dimen/dm025"
+                            android:background="@drawable/task_title_image"
+                            android:gravity="center"
+                            android:text="示例图"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/linearLayout_show_imagethree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout_imageone"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:layout_marginRight="@dimen/dm030"
+                            android:layout_marginTop="@dimen/dm010">
+
+                            <ImageView
+                                android:id="@+id/obtainEvidence_show_imagethree"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_image" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/taskobtain_image_deleteone"
+                            android:layout_width="@dimen/dm050"
+                            android:layout_height="@dimen/dm050"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:layout_marginTop="@dimen/dm020"
+                            android:background="@drawable/task_image_delete"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dm024" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/taskobtain_camera"
+                        android:layout_width="@dimen/dm080"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_above="@+id/linearLayout_imageone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/task_takecamera"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024" />
+
+                    <Button
+                        android:id="@+id/taskobtain_recordvideotwo"
+                        android:layout_width="@dimen/dm080"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_above="@+id/linearLayout_imageone"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        android:background="@drawable/task_takerecordvideo"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/text_task_requesttwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="256dp"
+                        android:layout_marginEnd="17dp"
+                        android:layout_marginRight="17dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm030"
+                            android:background="@drawable/step_two" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dm080"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dm005"
+                                android:text="拍摄取证3"
+                                android:textSize="@dimen/dm026" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dm040"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text="拍摄要求:"
+                                    android:textColor="#66666666"
+                                    android:textSize="@dimen/dm026" />
+
+                                <TextView
+                                    android:id="@+id/taskobtain_xiaoquthree"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dm010"
+                                    android:text="单元楼"
+                                    android:textColor="#666666"
+                                    android:textSize="@dimen/dm026" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dm010"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/completed_upload_requestone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm030"
+                        android:background="@drawable/step_two" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm010"
+                            android:layout_marginTop="@dimen/dm005"
+                            android:text="拍摄取证1"
+                            android:textSize="@dimen/dm026" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dm040"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dm010"
+                                android:text="拍摄要求:"
+                                android:textColor="#66666666"
+                                android:textSize="@dimen/dm026" />
+
+                            <TextView
+                                android:id="@+id/completed_upload_xiaoquone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dm010"
+                                android:text="朝阳小区"
+                                android:textColor="#666666"
+                                android:textSize="@dimen/dm026" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/completed_linearLayout_imagetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/completed_upload_requestone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm030"
+                        android:layout_marginRight="@dimen/dm030"
+                        android:layout_marginTop="@dimen/dm010">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/default_image" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm025"
+                        android:background="@drawable/task_title_image"
+                        android:gravity="center"
+                        android:text="示例图"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm024" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/completedlinearLayout_show_imageone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/completed_linearLayout_imagetwo">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm030"
+                        android:layout_marginLeft="@dimen/dm030"
+                        android:layout_marginRight="@dimen/dm030"
+                        android:layout_marginTop="@dimen/dm010">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/completed_upload_show_fourimageone"
+                                android:layout_width="match_parent"
+                                android:layout_height="500dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_image" />
+
+                            <Button
+                                android:id="@+id/completed_upload_close"
+                                android:layout_width="@dimen/dm050"
+                                android:layout_height="@dimen/dm050"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="@dimen/dm010"
+                                android:layout_marginTop="@dimen/dm010"
+                                android:background="@drawable/task_image_delete" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/dm008"
+                            android:layout_height="@dimen/dm008" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/completed_upload_show_fourimagetwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/default_image" />
+
+                            <Button
+                                android:id="@+id/completed_upload_closetwo"
+                                android:layout_width="@dimen/dm050"
+                                android:layout_height="@dimen/dm050"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginRight="@dimen/dm010"
+                                android:layout_marginTop="@dimen/dm010"
+                                android:background="@drawable/task_image_delete" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/completed_upload_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm030"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择漏刊范围:" />
+
+                    <TextView
+                        android:id="@+id/completed_upload_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50%" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm002"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:background="@color/vip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dm030"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="针对这次拍摄有什么建议反馈:" />
+
+                    <TextView
+                        android:id="@+id/completed_upload_suggestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="检测首选检测中心，首批通过CMA认证及北京市建委备案单位，面向社会提供公平公正的检测服务" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/task_next_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm030"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@drawable/circular_green_login_bg"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm030" />
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

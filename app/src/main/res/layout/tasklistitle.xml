@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm080"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:id="@+id/title_task_back"
+        android:layout_width="@dimen/dm000"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dm020"
+            android:layout_height="@dimen/dm036"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/title_task_back"
+        android:layout_toRightOf="@+id/title_task_back"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layout_title_non_execution"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title_non_execution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未执行"
+                android:textColor="@color/title_color_three"
+                android:textSize="@dimen/dm027" />
+
+            <ImageView
+                android:id="@+id/new_image_non_execution"
+                android:layout_width="@dimen/dm006"
+                android:layout_height="@dimen/dm006"
+                android:layout_toRightOf="@+id/title_non_execution"
+                android:src="@drawable/prompt_task"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_title_executioning"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title_executioning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行中"
+                android:textColor="@color/title_color_three"
+                android:textSize="@dimen/dm027" />
+
+            <ImageView
+                android:id="@+id/new_image_executioning"
+                android:layout_width="@dimen/dm006"
+                android:layout_height="@dimen/dm006"
+                android:layout_toRightOf="@+id/title_executioning"
+                android:src="@drawable/prompt_task"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_have_execution"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title_have_execution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已上传"
+                android:textColor="@color/title_color_three"
+                android:textSize="@dimen/dm027" />
+
+            <ImageView
+                android:id="@+id/new_image_have_execution"
+                android:layout_width="@dimen/dm006"
+                android:layout_height="@dimen/dm006"
+                android:layout_toRightOf="@+id/title_have_execution"
+                android:src="@drawable/prompt_task"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_passivity_task"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title_passivity_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="被驳回"
+                android:textColor="@color/title_color_three"
+                android:textSize="@dimen/dm027" />
+
+            <ImageView
+                android:id="@+id/new_image_passivity_task"
+                android:layout_width="@dimen/dm006"
+                android:layout_height="@dimen/dm006"
+                android:layout_toRightOf="@+id/title_passivity_task"
+                android:src="@drawable/prompt_task"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_task"
+        android:layout_width="@dimen/dm000"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dm040"
+            android:layout_height="@dimen/dm040"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dm010"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+</LinearLayout>

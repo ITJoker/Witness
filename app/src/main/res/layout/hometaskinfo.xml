@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dm090"
+        android:layout_marginTop="@dimen/dm072">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hometaskinfo_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:gravity="center"
+                android:textColor="@color/title_color_one"
+                android:textSize="@dimen/dm027"
+                android:textStyle="bold" />
+
+            <include layout="@layout/hometaskinfobanner" />
+
+            <ProgressBar
+                android:id="@+id/hometaskinfo_pb"
+                style="@style/StyleProgressBarMini"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm020"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_progressbar_bg"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm060"
+                android:layout_marginLeft="@dimen/dm030"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结束倒计时："
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm024" />
+
+                <com.risenb.witness.views.citypicker.CountDownTimerView
+                    android:id="@+id/hometaskinfo_down_timer"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm002"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:layout_marginLeft="@dimen/dm030"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm036"
+                    android:layout_height="@dimen/dm036"
+                    android:src="@drawable/home_titleleft" />
+
+                <TextView
+                    android:id="@+id/hometaskinfo_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm015"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm024" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm016"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:text="检查内容"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm024" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="1、主要负责人安全生产责任制查企业是否下发文件，有无安全生产责任制文本，责任制文本是否结构完整"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="2、主要负责人安全生产责任制查企业是否下发文件，有无安全生产责任制文本，责任制文本是否结构完整"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="3、主要负责人安全生产责任制查企业是否下发文件，有无安全生产责任制文本，责任制文本是否结构完整"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:text="检查内容"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm024" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="1、主要负责人安全生产责任制查企业是否下发文件"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="2、主要负责人安全生产责任制查企业是否下发文件"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="3、主要负责人安全生产责任制查企业是否下发文件"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/dm022" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm090"
+        android:layout_alignParentBottom="true"
+        android:background="#f0f0f0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dm000"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:src="@drawable/home_item_money" />
+
+            <TextView
+                android:id="@+id/hometaskinfo_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm015"
+                android:text="￥0.00"
+                android:textColor="#e11818"
+                android:textSize="@dimen/dm028" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hometaskinfo_qrw_tv"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="2"
+            android:background="@color/main_green"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dm050"
+            android:paddingRight="@dimen/dm050"
+            android:text="抢任务"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm030" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_pop_list"
+        android:layout_width="@dimen/dm200"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dm100"
+        android:background="@drawable/sp_dialog" />
+</RelativeLayout>

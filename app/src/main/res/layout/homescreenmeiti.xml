@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/view_overy"
+        android:layout_width="@dimen/dm000"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent_one" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dm000"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/content_bg">
+
+        <ListView
+            android:id="@+id/homescreenmeiti_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.risenb.witness.ui.HomeScreen.SideBar
+            android:id="@+id/homescreen_msb"
+            android:layout_width="@dimen/dm040"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="bottom" >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dm120" >
+
+        <LinearLayout
+            android:id="@+id/xlistview_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/xlistview_header_hint_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/xlistview_header_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm006"
+                android:text="上次更新时间："
+                android:textColor="#666"
+                android:textSize="@dimen/dm024"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/xlistview_header_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/xlistview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_070"
+            android:src="@drawable/xlistview_arrow" />
+
+        <ProgressBar
+            android:id="@+id/xlistview_header_progressbar"
+            android:layout_width="@dimen/dm060"
+            android:layout_height="@dimen/dm060"
+            android:layout_alignLeft="@id/xlistview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm_080"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

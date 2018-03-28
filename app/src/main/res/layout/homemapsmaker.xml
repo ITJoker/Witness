@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/homemaps_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm000"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm300"
+        android:background="@color/main"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dm050"
+                android:layout_height="@dimen/dm008"
+                android:layout_margin="@dimen/dm025"
+                android:src="@drawable/circular_gray_login_bg" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/homemapsmaker_mlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dm001"
+            android:divider="@color/vip"
+            android:dividerHeight="@dimen/dm010"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:layout_marginTop="@dimen/dm010"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/layout_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="@dimen/dm005"
+        android:background="@drawable/task_situation_normal">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:id="@+id/listview_checkbox_text"
+            android:layout_width="@dimen/dm105"
+            android:layout_height="@dimen/dm080"
+            android:textSize="15sp"
+            android:text="问题"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dm050"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            />
+
+    <CheckBox
+        android:gravity="center_vertical"
+        android:id="@+id/listview_checkbox_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:theme="@style/MyCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+</LinearLayout>

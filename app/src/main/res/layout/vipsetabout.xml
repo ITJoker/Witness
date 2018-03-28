@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dm001"
+        android:background="#FAFAFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dm030"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vipsetabout_version_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="版本号：1.0（"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm027" />
+
+                <TextView
+                    android:id="@+id/vipsetabout_gx_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/dm027" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="）"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm027" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/QRCodeImageUrl_iv"
+                android:layout_width="@dimen/dm210"
+                android:layout_height="@dimen/dm210"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dm030" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dm040"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dm030"
+                android:gravity="center"
+                android:text="扫描二维码，下载人人目击客户端和您的小伙伴分享赚钱秘诀!"
+                android:textColor="#B4B4B5"
+                android:textSize="@dimen/dm021" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/qqCrowd_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm072"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="官方QQ群："
+                    android:textColor="#A6A6A6"
+                    android:textSize="@dimen/dm024" />
+
+                <TextView
+                    android:id="@+id/servicePhone_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm072"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dm002"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="客服电话  ："
+                    android:textColor="#A6A6A6"
+                    android:textSize="@dimen/dm024" />
+
+                <TextView
+                    android:id="@+id/serviceTime_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm072"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dm002"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dm030"
+                    android:text="工作时间  ："
+                    android:textColor="#A6A6A6"
+                    android:textSize="@dimen/dm024" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vipsetabout_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dm060"
+            android:textColor="#777777"
+            android:textSize="@dimen/dm024" />
+    </RelativeLayout>
+</LinearLayout>

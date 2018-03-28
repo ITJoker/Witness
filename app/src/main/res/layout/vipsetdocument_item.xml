@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm080"
+    android:background="@color/main"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm088"
+        android:background="@color/main"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vipsetdocument_item_tv"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dm036"
+            android:layout_weight="1"
+            android:text="注册和登录"
+            android:textColor="@color/title_color_one"
+            android:textSize="@dimen/dm027" />
+
+        <ImageView
+            android:layout_width="@dimen/dm024"
+            android:layout_height="@dimen/dm024"
+            android:layout_marginBottom="@dimen/dm020"
+            android:layout_marginLeft="@dimen/dm020"
+            android:layout_marginRight="@dimen/dm024"
+            android:layout_marginTop="@dimen/dm020"
+            android:src="@drawable/vipinfo_rightmore" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm001"
+        android:background="@color/vip" />
+</LinearLayout>

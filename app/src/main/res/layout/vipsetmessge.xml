@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vip"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="@dimen/dm088"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="任务快到期"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm027" />
+
+                <CheckBox
+                    android:id="@+id/vipsetmessge_rwdq_cb"
+                    android:layout_width="@dimen/dm100"
+                    android:layout_height="@dimen/dm050"
+                    android:layout_marginRight="@dimen/dm030"
+                    android:background="@drawable/vipsetmessgedian"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm088"
+                android:layout_marginTop="@dimen/dm001"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm036"
+                        android:text="夜间免打扰"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm036"
+                        android:layout_marginTop="@dimen/dm010"
+                        android:text="开启后，22：00 - 08：00消息将不提醒"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm021" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/vipsetmessge_mdr_cb"
+                    android:layout_width="@dimen/dm100"
+                    android:layout_height="@dimen/dm050"
+                    android:layout_marginRight="@dimen/dm030"
+                    android:background="@drawable/vipsetmessgedian"
+                    android:button="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

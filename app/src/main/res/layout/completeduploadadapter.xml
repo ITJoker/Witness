@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_completedupload_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm015"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/translete"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dm020"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传时间："
+                    android:textColor="@color/title_color_two"
+                    android:textSize="@dimen/dm024" />
+
+                <TextView
+                    android:id="@+id/uploadtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title_color_two"
+                    android:textSize="@dimen/dm024" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/completedupload_Audited"
+                android:layout_width="@dimen/dm120"
+                android:layout_height="@dimen/dm045"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="#ED3131"
+                android:textSize="@dimen/dm024"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/completedupload_Auditing"
+                android:layout_width="@dimen/dm120"
+                android:layout_height="@dimen/dm045"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="审核中"
+                android:textColor="@color/baby_blue"
+                android:textSize="@dimen/dm024"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:id="@+id/text_execution_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/translete"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/completed_upload_image"
+                android:layout_width="@dimen/dm144"
+                android:layout_height="@dimen/dm100"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/dm020"
+                android:src="@color/bantm" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dm000"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm020"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/completed_upload_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:text="北京"
+                    android:textColor="@color/title_color_one"
+                    android:textSize="@dimen/dm021"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/completed_upload_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:maxLines="1"
+                    android:textColor="@color/title_color_two"
+                    android:textSize="@dimen/dm021" />
+
+                <LinearLayout
+                    android:id="@+id/completed_upload_money_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm010"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_item_money"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/completed_upload_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/clock_red"
+                        android:textSize="@dimen/dm024" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dm020"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/completed_upload_task_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/title_color_two"
+                android:textSize="@dimen/dm024" />
+
+            <TextView
+                android:id="@+id/completed_upload_task_lose_effect_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/title_color_two"
+                android:textSize="@dimen/dm024" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

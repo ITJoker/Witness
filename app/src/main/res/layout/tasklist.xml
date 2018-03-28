@@ -1,0 +1,313 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginBottom="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm030"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/non_execution_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm080"
+                    android:src="@drawable/arrows_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/task_executioning" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm080"
+                    android:src="@drawable/arrows_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/have_uploaded_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm080"
+                    android:src="@drawable/arrows_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/passivity_reject_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dm080"
+                    android:src="@drawable/arrows_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/disabled_task_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dm010"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm020"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_non_execution_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm100"
+                        android:background="@drawable/non_execution_task_background"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/text_non_execution_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dm060"
+                            android:text="未执行任务"
+                            android:textSize="@dimen/dm026" />
+
+                        <ImageView
+                            android:id="@+id/non_prompt_task"
+                            android:layout_width="@dimen/dm006"
+                            android:layout_height="@dimen/dm006"
+                            android:layout_toRightOf="@+id/text_non_execution_task"
+                            android:src="@drawable/prompt_task"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tasklist_wei_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:text="0"
+                            android:textSize="@dimen/dm026" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_executioning_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm100"
+                        android:layout_marginTop="@dimen/dm010"
+                        android:background="@drawable/non_execution_task_background"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/text_executioning_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dm060"
+                            android:text="执行中任务"
+                            android:textSize="@dimen/dm026" />
+
+                        <ImageView
+                            android:id="@+id/executioning_task"
+                            android:layout_width="@dimen/dm006"
+                            android:layout_height="@dimen/dm006"
+                            android:layout_toRightOf="@+id/text_executioning_task"
+                            android:src="@drawable/prompt_task"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tasklist_zhong_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:text="0"
+                            android:textSize="@dimen/dm026" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_have_execution_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm100"
+                        android:background="@drawable/non_execution_task_background"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/text_have_execution_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dm060"
+                            android:text="已上传任务"
+                            android:textSize="@dimen/dm026" />
+
+                        <ImageView
+                            android:id="@+id/have_execution_task"
+                            android:layout_width="@dimen/dm006"
+                            android:layout_height="@dimen/dm006"
+                            android:layout_toRightOf="@+id/text_have_execution_task"
+                            android:src="@drawable/prompt_task"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tasklist_shang_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:text="0"
+                            android:textSize="@dimen/dm026" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_passivity_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm100"
+                        android:layout_marginBottom="@dimen/dm010"
+                        android:background="@drawable/non_execution_task_background"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/text_passivity_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dm060"
+                            android:text="被驳回任务"
+                            android:textSize="@dimen/dm026" />
+
+                        <ImageView
+                            android:id="@+id/passivity_task"
+                            android:layout_width="@dimen/dm006"
+                            android:layout_height="@dimen/dm006"
+                            android:layout_toRightOf="@+id/text_passivity_task"
+                            android:src="@drawable/prompt_task"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tasklist_bohui_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:text="0"
+                            android:textSize="@dimen/dm026" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <RelativeLayout
+                        android:id="@+id/layout_overtime_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm100"
+                        android:background="@drawable/non_execution_task_background"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/text_overtime_task"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dm060"
+                            android:text="已过期任务"
+                            android:textSize="@dimen/dm026" />
+
+                        <ImageView
+                            android:id="@+id/overtime_task"
+                            android:layout_width="@dimen/dm006"
+                            android:layout_height="@dimen/dm006"
+                            android:layout_toRightOf="@+id/text_overtime_task"
+                            android:src="@drawable/prompt_task"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tasklist_overtime_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dm040"
+                            android:text="0"
+                            android:textSize="@dimen/dm026" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/taskList_circular_fill_able_loaders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+            android:id="@+id/circularFillableLoaders"
+            android:layout_width="@dimen/dm480"
+            android:layout_height="@dimen/dm480"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher"
+            app:cfl_border="true"
+            app:cfl_border_width="12dp"
+            app:cfl_progress="66"
+            app:cfl_wave_amplitude="0.06"
+            app:cfl_wave_color="#97C830" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="正在批量上传中..."
+            android:textColor="@color/albumback"
+            android:textSize="@dimen/dm054" />
+    </FrameLayout>
+
+</FrameLayout>

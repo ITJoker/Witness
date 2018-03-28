@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/realname_wai_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/realname_renzheng_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请填写身份信息，以完成实名认证："
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm020" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/realname_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入真实姓名"
+                    android:paddingLeft="@dimen/dm020"
+                    android:textColor="@color/title_color_one"
+                    android:textColorHint="#d4d4d4"
+                    android:textSize="@dimen/dm027" />
+
+                <EditText
+                    android:id="@+id/realname_code_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginTop="@dimen/dm001"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入身份证号码"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/dm020"
+                    android:textColor="@color/title_color_one"
+                    android:textColorHint="#d4d4d4"
+                    android:textSize="@dimen/dm027" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm020"
+                    android:text="身份信息由人人目击严格保密"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/dm020" />
+
+                <TextView
+                    android:id="@+id/realname_next_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dm090"
+                    android:layout_marginRight="@dimen/dm090"
+                    android:layout_marginTop="@dimen/dm090"
+                    android:background="@drawable/circular_green_login_bg"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm030" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/realname_wancheng_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/money_money_shimingrenzhengok" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="实名认证成功"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm030"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm090"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:id="@+id/realname_okname_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm027" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm012"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:id="@+id/realname_okcode_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm027" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm012"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID："
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm027" />
+
+                    <TextView
+                        android:id="@+id/realname_okid_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm027" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm002"
+                    android:layout_marginLeft="@dimen/dm040"
+                    android:layout_marginRight="@dimen/dm040"
+                    android:layout_marginTop="@dimen/dm060"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/realname_xuxian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm040"
+                    android:layout_marginRight="@dimen/dm040"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:lineSpacingExtra="@dimen/dm005"
+                    android:text="实名认证信息无法修改，人人目击钱包中的现金余额只能转出至以上实名信息的账户"
+                    android:textColor="#777777"
+                    android:textSize="@dimen/dm024" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

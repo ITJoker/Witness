@@ -1,0 +1,228 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_one"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm720"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm675"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/money_money_tixianbj"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm070"
+                android:text="请选择取现方式"
+                android:textColor="#000000"
+                android:textSize="@dimen/dm026" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm050"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:background="@drawable/circular_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm016"
+                        android:text="提现金额 ￥"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm026" />
+
+                    <EditText
+                        android:id="@+id/vipwalletmoneypop_price_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm070"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="提现金额"
+                        android:paddingLeft="@dimen/dm020"
+                        android:textColor="#333333"
+                        android:textColorHint="#d4d4d4"
+                        android:textSize="@dimen/dm026" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm020"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/money_money_tixiantixing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm016"
+                        android:text="每次提现系统需扣除本次提现金额的1%手续费，手续费少于1元时按照最低手续费1元计算"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm020" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:background="@drawable/circular_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm016"
+                        android:text="支付宝姓名"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm026" />
+
+                    <EditText
+                        android:id="@+id/vipwalletmoneypop_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入姓名"
+                        android:paddingLeft="@dimen/dm020"
+                        android:textColor="#333333"
+                        android:textColorHint="#d4d4d4"
+                        android:textSize="@dimen/dm026" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:background="@drawable/circular_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm016"
+                        android:text="支付宝帐号"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm026" />
+
+                    <EditText
+                        android:id="@+id/vipwalletmoneypop_username_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dm080"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm020"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入账号"
+                        android:paddingLeft="@dimen/dm020"
+                        android:textColor="#333333"
+                        android:textColorHint="#d4d4d4"
+                        android:textSize="@dimen/dm026" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vipwalletmoneypop_no_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dm020"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/tishi" />
+
+                    <TextView
+                        android:id="@+id/trueNameCertification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm016"
+                        android:text="未实名认证"
+                        android:textColor="#777777"
+                        android:textSize="@dimen/dm020" />
+
+                    <TextView
+                        android:id="@+id/moneypop_qurenzheng_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm016"
+                        android:text="去认证 >"
+                        android:textColor="@color/main_green"
+                        android:textSize="@dimen/dm020" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm060"
+                android:layout_marginLeft="@dimen/dm060"
+                android:layout_marginRight="@dimen/dm060"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/moneypop_qx_tv"
+                    android:layout_width="@dimen/dm220"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circular_bead"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/title_color_one" />
+
+                <View
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="@dimen/dm000"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/moneypop_tijiao_tv"
+                    android:layout_width="@dimen/dm220"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circular_main_green"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dm088"
+            android:layout_height="@dimen/dm088"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/money_money_tixiantixing" />
+    </RelativeLayout>
+</RelativeLayout>

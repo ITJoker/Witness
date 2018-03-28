@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.risenb.witness.ui.tasklist.CustomCamera.SquareCameraContainer
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="@color/color_2a2a2a">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_flashlight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_camera_direction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@color/color_262626"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dm050"
+                android:paddingRight="@dimen/dm050">
+
+                <Button
+                    android:layout_width="@dimen/dm060"
+                    android:layout_height="@dimen/dm060"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onExitClicked"
+                    android:text="取消"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/ib_takephoto"
+                    android:layout_width="@dimen/dm100"
+                    android:layout_height="@dimen/dm100"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/take_photo_btn_shutter"
+                    android:onClick="onTakePhotoClicked" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

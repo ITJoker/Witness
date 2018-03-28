@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vipset_messge_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_weight="1"
+                    android:text="消息推送"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/dm024" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm030"
+                    android:layout_height="@dimen/dm030"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="#E5E5E5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dm020"
+                android:text="关闭后将不能收到消息通知"
+                android:textColor="#A5A5A5"
+                android:textSize="@dimen/dm021" />
+
+            <LinearLayout
+                android:id="@+id/vipset_about_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_weight="1"
+                    android:text="关于我们"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/dm024" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm030"
+                    android:layout_height="@dimen/dm030"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/vipinfo_changepass_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_loginpassword"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_weight="1"
+                    android:text="修改密码"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/dm024" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm030"
+                    android:layout_height="@dimen/dm030"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:background="#eeeeee" />
+
+            <LinearLayout
+                android:id="@+id/vipset_clearcache_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_weight="1"
+                    android:text="清除缓存"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/dm024" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm030"
+                    android:layout_height="@dimen/dm030"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/vipset_userout_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm060"
+                    android:layout_marginRight="@dimen/dm060"
+                    android:layout_marginTop="@dimen/dm180"
+                    android:background="@drawable/circular_green_login_bg"
+                    android:gravity="center"
+                    android:text="退出登录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm030" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

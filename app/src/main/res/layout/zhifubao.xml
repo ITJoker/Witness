@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/wallet_zhifubao_user_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm050"
+                android:background="@drawable/circular_gray"
+                android:gravity="center_vertical"
+                android:hint="支付宝帐号"
+                android:paddingLeft="@dimen/dm020"
+                android:textColor="#333333"
+                android:textColorHint="#d4d4d4"
+                android:textSize="@dimen/dm027" />
+
+            <EditText
+                android:id="@+id/wallet_zhifubao_true_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm080"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm020"
+                android:background="@drawable/circular_gray"
+                android:gravity="center_vertical"
+                android:hint="支付宝实名"
+                android:paddingLeft="@dimen/dm020"
+                android:textColor="#333333"
+                android:textColorHint="#d4d4d4"
+                android:textSize="@dimen/dm027" />
+
+            <LinearLayout
+                android:id="@+id/wallet_zhifubao_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginRight="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm020"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/money_quxianguize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="常见问题"
+                    android:textColor="#777777"
+                    android:textSize="@dimen/dm021" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wallet_zhifubaobc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm090"
+                android:background="@drawable/circular_green_login_bg"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm030" />
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#FFF</color>
+    <color name="translete">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="background">#EDEDED</color>
+    <color name="vip">#E5E5E5</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="main_green">#1C9297</color>
+    <color name="main_gray">#787878</color>
+    <color name="baby_blue">#1EA5EB</color>
+    <color name="light_green">#66B72E</color>
+
+    <color name="colorPrimary">#F3F3F3</color>
+    <color name="colorPrimaryDark">#FDFDFD</color>
+    <color name="colorAccent">#F3F3F3</color>
+    <color name="colorGray">#E9E5DD</color>
+
+    <color name="vipBackgroundColor">#494B5A</color>
+    <color name="divider">#EEEEEE</color>
+    <color name="shadow">#AAEBEBEB</color>
+    <color name="common_bg">#FAFAFA</color>
+    <color name="content_bg">#F1F1F1</color>
+    <color name="gray">#D4D4D4</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="theme_gray">#646464</color>
+    <color name="transparent">#0000</color>
+
+    <color name="transparent_one">#50000000</color>
+    <color name="pressed">#fff22fff</color>
+    <color name="selected">#fff33fff</color>
+    <color name="focused">#ffff44ff</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="bantm">#c0eeeeee</color>
+
+    <color name="title_color_one">#3A3A3A</color>
+    <color name="title_color_two">#A7A7A7</color>
+    <color name="title_color_three">#C9C9C9</color>
+    <color name="widget_toggle_active">#9033B5E5</color>
+    <color name="widget_option_active">#FF33B5E5</color>
+    <color name="clock_red">#EB1E1E</color>
+    <color name="pano_progress_empty">#FF2E2E2E</color>
+    <color name="pano_progress_done">#FF33525E</color>
+    <color name="pano_progress_indication">#FF0099CC</color>
+    <color name="pano_progress_indication_fast">#FFFF2222</color>
+    <color name="pano_saving_done">#FF5E5233</color>
+    <color name="pano_saving_indication">#FF99CC00</color>
+    <color name="review_drawer_button_bg">#88333333</color>
+    <color name="review_drawer_button_pressed">#8833B5E5</color>
+
+    <!--自定义相机-->
+    <color name="color_262626_70">#4D262626</color>
+    <color name="color_2a2a2a">#2a2a2a</color>
+    <color name="color_f05382">#f05382</color>
+    <color name="color_262626">#262626</color>
+</resources>

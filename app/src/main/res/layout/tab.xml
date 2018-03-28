@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:background="@color/background" />
+
+            <RadioGroup
+                android:id="@+id/rg_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm090"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dm001">
+
+                <RadioButton
+                    android:id="@+id/rb_tab_1"
+                    style="@style/tab"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_1"
+                    android:textColor="@color/main_gray" />
+
+                <RadioButton
+                    android:id="@+id/rb_tab_2"
+                    style="@style/tab"
+                    android:drawableTop="@drawable/tab_2"
+                    android:textColor="@color/main_gray" />
+
+                <RadioButton
+                    android:id="@+id/rb_tab_3"
+                    style="@style/tab"
+                    android:drawableTop="@drawable/tab_3"
+                    android:textColor="@color/main_gray" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm150"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tab1_true_iv"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dm010"
+                android:src="@drawable/tab_1_true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/tab2_true_iv"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dm010"
+                android:src="@drawable/tab_2_true"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/tab3_true_iv"
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/dm010"
+                android:src="@drawable/tab_3_true"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm120"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/tab1_prompttrue_iv"
+                    android:layout_width="@dimen/dm006"
+                    android:layout_height="@dimen/dm006"
+                    android:layout_marginLeft="@dimen/dm050"
+                    android:layout_marginTop="@dimen/dm005"
+                    android:padding="@dimen/dm010"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/prompt_task"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/tab2_prompttrue_iv"
+                    android:layout_width="@dimen/dm006"
+                    android:layout_height="@dimen/dm006"
+                    android:layout_marginLeft="@dimen/dm050"
+                    android:layout_marginTop="@dimen/dm005"
+                    android:padding="@dimen/dm010"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/prompt_task"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dm000"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/tab3_prompttrue_iv"
+                    android:layout_width="@dimen/dm006"
+                    android:layout_height="@dimen/dm006"
+                    android:layout_marginLeft="@dimen/dm050"
+                    android:layout_marginTop="@dimen/dm005"
+                    android:padding="@dimen/dm010"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/prompt_task"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

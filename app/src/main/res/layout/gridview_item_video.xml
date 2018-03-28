@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_grid_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm020">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_grid_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm360"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/item_grid_click"
+                android:layout_width="@dimen/dm180"
+                android:layout_height="@dimen/dm180"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/ic_shortcut_video_call"
+                android:visibility="visible" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/delete_imageview"
+        android:layout_width="@dimen/dm051"
+        android:layout_height="@dimen/dm051"
+        android:layout_alignEnd="@+id/item_grid_video_layout"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/item_grid_video_layout"
+        android:layout_marginTop="@dimen/dm030"
+        android:src="@drawable/task_image_delete"
+        android:visibility="visible" />
+
+</RelativeLayout>

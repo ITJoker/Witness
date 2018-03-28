@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vip"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm278"
+                android:background="@color/main_green">
+
+                <ImageView
+                    android:id="@+id/wallet_money_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm050"
+                    android:src="@drawable/money_money" />
+
+                <TextView
+                    android:id="@+id/money_balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wallet_money_iv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dm028" />
+
+                <LinearLayout
+                    android:id="@+id/money_balance_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dm020"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/dm005"
+                        android:src="@drawable/money_quxianguize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/wallet_money_iv"
+                        android:layout_marginLeft="@dimen/dm010"
+                        android:text="取现规则 "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dm022" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/money_tixianzhong"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm088"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:text="等待审核中 "
+                    android:textColor="#777777"
+                    android:textSize="@dimen/dm026" />
+
+                <TextView
+                    android:id="@+id/money_price_tv"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm016"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/dm026" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm024"
+                    android:layout_height="@dimen/dm024"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/money_lishijilu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm088"
+                android:layout_marginTop="@dimen/dm016"
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:layout_weight="1"
+                    android:text="历史记录"
+                    android:textColor="#777777"
+                    android:textSize="@dimen/dm026" />
+
+                <ImageView
+                    android:layout_width="@dimen/dm024"
+                    android:layout_height="@dimen/dm024"
+                    android:layout_marginBottom="@dimen/dm020"
+                    android:layout_marginLeft="@dimen/dm020"
+                    android:layout_marginRight="@dimen/dm024"
+                    android:layout_marginTop="@dimen/dm020"
+                    android:src="@drawable/vipinfo_rightmore" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wallet_money_tixian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@drawable/circular_green_login_bg"
+                android:gravity="center"
+                android:text="提现"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm030" />
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

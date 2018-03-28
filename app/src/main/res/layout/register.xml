@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/register_title_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dm150"
+                android:scaleType="fitXY"
+                android:textColor="#292929"
+                android:textSize="@dimen/dm036"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/register_username_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm072"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="#4D4D4D"
+                android:textColorHint="#CBCBCB"
+                android:textSize="@dimen/dm027" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:background="#eeeeee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_code_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm072"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dm090"
+                    android:layout_marginRight="@dimen/dm090"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="#4D4D4D"
+                    android:textColorHint="#CBCBCB"
+                    android:textSize="@dimen/dm027" />
+
+                <TextView
+                    android:id="@+id/rgister_code_tv"
+                    android:layout_width="@dimen/dm150"
+                    android:layout_height="@dimen/dm072"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dm090"
+                    android:background="#ECECEC"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:text="获取验证码"
+                    android:textColor="#A9A9A9"
+                    android:textSize="@dimen/dm027" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm001"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:background="#eeeeee" />
+
+            <TextView
+                android:id="@+id/register_register_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:layout_marginTop="@dimen/dm030"
+                android:background="@drawable/circular_gray_login_bg"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm030" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm040"
+                android:layout_marginTop="@dimen/dm030"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/register_login_tv"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm090"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="登录帐号"
+                    android:textColor="#777777"
+                    android:textSize="@dimen/dm027" />
+
+                <TextView
+                    android:id="@+id/register_tiaoguo_tv"
+                    android:layout_width="@dimen/dm000"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dm090"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="跳过"
+                    android:textColor="#777777"
+                    android:textSize="@dimen/dm027" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+</LinearLayout>

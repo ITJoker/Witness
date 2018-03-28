@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:horizontalGap="0px"
+    android:keyHeight="50.0dip"
+    android:keyWidth="25%p"
+    android:verticalGap="0px" >
+
+    <Row>
+        <Key
+            android:codes="49"
+            android:isRepeatable="true"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:isRepeatable="true"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:isRepeatable="true"
+            android:keyLabel="3" />
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/sym_keyboard_delete" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="52"
+            android:isRepeatable="true"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:isRepeatable="true"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:isRepeatable="true"
+            android:keyLabel="6" />
+        <Key
+            android:codes="88"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"
+            android:keyLabel="X" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="55"
+            android:isRepeatable="true"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:isRepeatable="true"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:isRepeatable="true"
+            android:keyLabel="9" />
+        <Key
+            android:codes="-3"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"
+            android:keyHeight="100dip"
+            android:keyLabel="完成" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="57419"
+            android:isRepeatable="true"
+            android:keyIcon="@drawable/sym_keyboard_left" />
+        <Key
+            android:codes="48"
+            android:isRepeatable="true"
+            android:keyLabel="0" />
+        <Key
+            android:codes="57421"
+            android:isRepeatable="true"
+            android:keyIcon="@drawable/sym_keyboard_right" />
+    </Row>
+
+</Keyboard>

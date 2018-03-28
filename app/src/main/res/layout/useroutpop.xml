@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_one"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm290"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm070"
+            android:text="账号已在其他设备登录"
+            android:textColor="#000000"
+            android:textSize="@dimen/dm030" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm060"
+            android:layout_marginBottom="@dimen/dm020"
+            android:layout_marginLeft="@dimen/dm060"
+            android:layout_marginRight="@dimen/dm060"
+            android:layout_marginTop="@dimen/dm060"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/useroutpop_qx_tv"
+                android:layout_width="@dimen/dm220"
+                android:layout_height="match_parent"
+                android:background="@drawable/circular_bead"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/title_color_one"
+                android:textSize="@dimen/dm030" />
+
+            <View
+                android:layout_width="@dimen/dm000"
+                android:layout_height="@dimen/dm000"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/useroutpop_ok_tv"
+                android:layout_width="@dimen/dm220"
+                android:layout_height="match_parent"
+                android:background="@drawable/circular_main_green"
+                android:gravity="center"
+                android:text="重新登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm030" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

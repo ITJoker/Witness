@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dm120"
+        android:layout_height="@dimen/dm120"
+        android:background="@drawable/sp_dialog"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="@dimen/dm100"
+            android:layout_height="@dimen/dm100"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/common_custom_progressbar"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="@dimen/dm095"
+            android:layout_height="@dimen/dm095"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sp_white_round"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="@dimen/dm072"
+            android:layout_height="@dimen/dm072"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone" />
+
+        <com.risenb.witness.views.newViews.ColorArcProgressBar
+            android:id="@+id/capb_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#999"
+            android:textSize="@dimen/dm020"
+            android:visibility="gone" />
+
+        <!--蓝色转圈-->
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="@dimen/dm100"
+            android:layout_height="@dimen/dm100"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</RelativeLayout>

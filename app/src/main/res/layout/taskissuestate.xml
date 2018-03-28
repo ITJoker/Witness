@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_state"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/scrollView_select_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:listSelector="@color/transparent"
+                android:paddingBottom="@dimen/dm015"
+                android:paddingTop="@dimen/dm015"
+                android:scrollbars="none" />
+
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm270"
+                android:layout_margin="@dimen/dm030"
+                android:background="@drawable/circular_gray"
+                android:gravity="start"
+                android:hint="备注："
+                android:padding="@dimen/dm015"
+                android:textColor="@color/title_color_one"
+                android:textColorHint="#D1D1D1"
+                android:textSize="@dimen/dm024" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_situation_bad"
+                android:layout_marginBottom="@dimen/dm030"
+                android:layout_marginLeft="@dimen/dm090"
+                android:layout_marginRight="@dimen/dm090"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/next_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/circular_green_login_bg"
+                    android:gravity="center"
+                    android:text="上传任务"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="8" />
+
+                <Button
+                    android:id="@+id/pre_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm030"
+                    android:layout_weight="1"
+                    android:background="@drawable/circular_green_stroke_login_bg"
+                    android:gravity="center"
+                    android:text="保存任务"
+                    android:textColor="@color/main_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

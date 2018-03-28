@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/text_task_requestthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm020"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:background="@drawable/step_two" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm080"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/two_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dm010"
+                    android:text="拍摄取证2"
+                    android:textSize="@dimen/dm026" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dm040"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm010"
+                        android:text="拍摄要求:"
+                        android:textColor="#66666666"
+                        android:textSize="@dimen/dm026" />
+
+                    <TextView
+                        android:id="@+id/two_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm010"
+                        android:text="3号楼录像5s-10min"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/dm026" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_imagethree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_task_requestthree">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:layout_marginTop="@dimen/dm010">
+
+                <ImageView
+                    android:id="@+id/two_image_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm300"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_image" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm020"
+                android:layout_marginTop="@dimen/dm025"
+                android:background="@drawable/task_title_image"
+                android:gravity="center"
+                android:text="示例图"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm024" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout_show_imagetwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_imagethree"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dm030"
+                android:layout_marginRight="@dimen/dm030"
+                android:layout_marginTop="@dimen/dm010">
+
+                <ImageView
+                    android:id="@+id/obtainEvidence_show_imagetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_image" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/taskobtain_image_deletethree"
+                android:layout_width="@dimen/dm030"
+                android:layout_height="@dimen/dm030"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dm040"
+                android:layout_marginTop="@dimen/dm020"
+                android:background="@drawable/task_image_delete"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dm024" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/taskinfopreview_two_bt"
+            android:layout_width="@dimen/dm080"
+            android:layout_height="@dimen/dm080"
+            android:layout_above="@+id/linearLayout_imagethree"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/task_takerecordvideo"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dm024" />
+    </RelativeLayout>
+
+</LinearLayout>

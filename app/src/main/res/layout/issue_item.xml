@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/Layout_issue_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dm020"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/anwer_issue_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dm080"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dm050"
+            android:gravity="center_vertical"
+            android:text="请选择"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/text_issue_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dm080"
+            android:background="@drawable/task_radiobutton_backgroud"
+            android:button="@null"
+            android:focusable="false" />
+    </RelativeLayout>
+</LinearLayout>

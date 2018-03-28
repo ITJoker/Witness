@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 没有选中图片背景 -->
+    <item android:drawable="@drawable/task_situation_normal" android:state_enabled="true"/>
+    <!-- 选中时的图片背景 -->
+    <item android:drawable="@drawable/task_situation_select" android:state_selected="true"/>
+
+
+
+</selector>

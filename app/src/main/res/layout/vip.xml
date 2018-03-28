@@ -1,0 +1,465 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.risenb.witness.views.newViews.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm072"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/vip_info_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/vip_user_info_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm160"
+                    android:background="@drawable/vip_background_total"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/vip_usericon_iv"
+                        android:layout_width="@dimen/dm100"
+                        android:layout_height="@dimen/dm100"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginLeft="@dimen/dm024"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:src="@drawable/default_user" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/vip_nickName_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dm000"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dm024" />
+
+                        <TextView
+                            android:id="@+id/vip_user_tel_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dm000"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/dm024" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/background"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/vip_wallet_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm024"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vipqianbao"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="钱包余额"
+                            android:textColor="@color/title_color_one"
+                            android:textSize="@dimen/dm024" />
+
+                        <TextView
+                            android:id="@+id/user_money_number_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/clock_red"
+                            android:textSize="@dimen/dm024" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/vip_authentication_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm030"
+                        android:layout_height="@dimen/dm030"
+                        android:src="@drawable/vipchengjidan"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="专属认证"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/background"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/vip_report_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm024"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dm020"
+                        android:layout_marginTop="@dimen/dm020"
+                        android:src="@drawable/vipchengjidan"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="成绩单"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm018"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/vip_messge_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm030"
+                        android:layout_height="@dimen/dm030"
+                        android:src="@drawable/vipxiaoxizhongxin"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="消息通知"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:id="@+id/messageState"
+                        android:layout_width="@dimen/dm006"
+                        android:layout_height="@dimen/dm006"
+                        android:layout_marginBottom="@dimen/dm012"
+                        android:src="@drawable/prompt_task"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:id="@+id/vipset_news_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:background="@color/main"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm030"
+                        android:layout_height="@dimen/dm030"
+                        android:src="@drawable/vip_study"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="@dimen/dm000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="新手攻略"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:id="@+id/vipset_document_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:background="@color/main"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm030"
+                        android:layout_height="@dimen/dm030"
+                        android:src="@drawable/vip_help_word"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="@dimen/dm000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="帮助文档"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm018"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/vipset_feedback_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:background="@color/main"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm030"
+                        android:layout_height="@dimen/dm030"
+                        android:src="@drawable/vip_feedback"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="@dimen/dm000"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="意见反馈"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:id="@+id/vipset_service_tel_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dm030"
+                            android:layout_height="@dimen/dm030"
+                            android:src="@drawable/vip_service_phone"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:layout_width="@dimen/dm000"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dm012"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="联系客服"
+                            android:textColor="@color/title_color_one"
+                            android:textSize="@dimen/dm024" />
+
+                        <TextView
+                            android:id="@+id/vipset_service_tel_tv"
+                            android:layout_width="@dimen/dm000"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textColor="@color/clock_red"
+                            android:textSize="@dimen/dm024" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm001"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:id="@+id/vip_set_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dm080"
+                    android:layout_marginLeft="@dimen/dm036"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm030"
+                        android:layout_height="@dimen/dm030"
+                        android:src="@drawable/vipshezhi"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dm012"
+                        android:layout_weight="1"
+                        android:text="设置"
+                        android:textColor="@color/title_color_one"
+                        android:textSize="@dimen/dm024" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dm024"
+                        android:layout_height="@dimen/dm024"
+                        android:layout_marginLeft="@dimen/dm020"
+                        android:layout_marginRight="@dimen/dm024"
+                        android:src="@drawable/vipinfo_rightmore" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.risenb.witness.views.newViews.MyScrollView>
+
+    <include layout="@layout/title" />
+</RelativeLayout>

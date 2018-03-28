@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_delete_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm001"
+        android:background="@color/main_green"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dm024"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dm024" />
+</LinearLayout>

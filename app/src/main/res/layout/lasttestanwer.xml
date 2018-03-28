@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dm010"
+    android:background="@color/background"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/test_layout_select_radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm005"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/dm010"
+        android:background="@drawable/task_situation_normal">
+
+        <TextView
+            android:id="@+id/test_anwer_text"
+            android:layout_width="@dimen/dm105"
+            android:layout_height="@dimen/dm080"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dm050"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:text="问题"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/test_radioBtn"
+            android:layout_width="@dimen/dm050"
+            android:layout_height="@dimen/dm050"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dm050"
+            android:background="@drawable/task_radiobutton_backgroud"
+            android:button="@null"
+            android:focusable="false"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/dm080"
+        android:clickable="true" />
+
+
+    <ImageView
+        android:id="@+id/maps_dangqian_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dm040"
+        android:src="@drawable/mapsdw" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm070"
+        android:layout_height="@dimen/dm150"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dm030"
+        android:background="@drawable/mapshomebj"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/maps_home_iv"
+            android:layout_width="@dimen/dm040"
+            android:layout_height="@dimen/dm040"
+            android:scaleType="fitXY"
+            android:src="@drawable/vipinfo_dizhi" />
+
+        <ImageView
+            android:id="@+id/maps_gongsi_iv"
+            android:layout_width="@dimen/dm040"
+            android:layout_height="@dimen/dm040"
+            android:layout_marginTop="@dimen/dm030"
+            android:scaleType="fitXY"
+            android:src="@drawable/vipinfo_gongsidizhi" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm020"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginRight="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm100"
+        android:background="@drawable/mapstop_sear"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/homemaps_back_ll"
+            android:layout_width="@dimen/dm050"
+            android:layout_height="@dimen/dm040"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/homemaps_sousuo_et"
+            android:layout_width="@dimen/dm000"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/main"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:hint="请输入地址"
+            android:paddingLeft="@dimen/dm010"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textColorHint="#d4d4d4"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:id="@+id/homemaps_sousuo_ll"
+            android:layout_width="@dimen/dm050"
+            android:layout_height="@dimen/dm040"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dm014"
+                android:background="@drawable/ic_search" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

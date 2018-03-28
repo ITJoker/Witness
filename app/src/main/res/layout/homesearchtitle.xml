@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dm080"
+    android:background="@color/main_green">
+
+    <EditText
+        android:id="@+id/search_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm056"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dm080"
+        android:layout_marginRight="@dimen/dm080"
+        android:background="@drawable/circular_gray"
+        android:gravity="center_vertical"
+        android:hint="请输入地址"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/dm008"
+        android:textColor="#666666"
+        android:textColorHint="#d4d4d4"
+        android:textSize="@dimen/dm024" />
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030">
+
+        <ImageView
+            android:layout_width="@dimen/dm020"
+            android:layout_height="@dimen/dm036"
+            android:scaleType="fitXY"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dm030"
+        android:paddingRight="@dimen/dm030">
+
+        <ImageView
+            android:layout_width="@dimen/dm040"
+            android:layout_height="@dimen/dm040"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+</RelativeLayout>

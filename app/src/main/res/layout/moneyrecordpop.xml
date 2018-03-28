@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dm020">
+
+    <View
+        android:layout_width="@dimen/dm183"
+        android:layout_height="@dimen/dm367"
+        android:layout_marginTop="@dimen/dm010"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dm019"
+        android:background="@color/vip"
+        android:id="@+id/view"></View>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dm000"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dm180"
+        android:layout_height="@dimen/dm376"
+        android:background="@drawable/money_record_shuaixuanbj"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view">
+
+        <TextView
+            android:id="@+id/moneyrecordpop_quanbu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="#666666"
+            android:textSize="@dimen/dm026" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_marginLeft="@dimen/dm010"
+            android:layout_marginRight="@dimen/dm010"
+            android:background="#c1c1c1" />
+
+        <TextView
+            android:id="@+id/moneyrecordpop_shixiao"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="失效"
+            android:textColor="#666666"
+            android:textSize="@dimen/dm026" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_marginLeft="@dimen/dm010"
+            android:layout_marginRight="@dimen/dm010"
+            android:background="#c1c1c1" />
+
+        <TextView
+            android:id="@+id/moneyrecordpop_tixianzhong"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="提现中"
+            android:textColor="#666666"
+            android:textSize="@dimen/dm026" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_marginLeft="@dimen/dm010"
+            android:layout_marginRight="@dimen/dm010"
+            android:background="#c1c1c1" />
+
+        <TextView
+            android:id="@+id/moneyrecordpop_yitixian"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已提现"
+            android:textColor="#666666"
+            android:textSize="@dimen/dm026" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_marginLeft="@dimen/dm010"
+            android:layout_marginRight="@dimen/dm010"
+            android:background="#c1c1c1" />
+
+        <TextView
+            android:id="@+id/moneyrecordpop_shenhezhong"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="审核中"
+            android:textColor="#666666"
+            android:textSize="@dimen/dm026" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm001"
+            android:layout_marginLeft="@dimen/dm010"
+            android:layout_marginRight="@dimen/dm010"
+            android:background="#c1c1c1" />
+
+        <TextView
+            android:id="@+id/moneyrecordpop_shouru"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm000"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="任务收入"
+            android:textColor="#666666"
+            android:textSize="@dimen/dm026" />
+
+    </LinearLayout>
+
+</RelativeLayout>

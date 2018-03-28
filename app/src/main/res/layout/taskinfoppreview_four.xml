@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dm030"
+    android:background="@color/main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm030"
+        android:layout_marginLeft="@dimen/dm020"
+        android:layout_marginTop="@dimen/dm040"
+        android:text="请选择上刊状态"
+        android:textColor="#000000"
+        android:textSize="@dimen/dm026" />
+
+    <com.risenb.witness.views.newViews.MyListView
+        android:id="@+id/taskinfopreview_mlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dm030"
+        android:divider="@null" />
+</LinearLayout>
